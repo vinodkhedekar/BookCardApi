@@ -3,7 +3,6 @@ var BookCard = require('../models/book-card-model');
 
 var bookCardRouter = express.Router();
 bookCardRouter.use(function (req, res, next) {
-  // do logging 
   // do authentication 
   console.log('Logging of request will be done here');
   next(); // make sure we go to the next routes and don't stop here
