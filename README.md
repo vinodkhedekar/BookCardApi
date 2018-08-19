@@ -4,74 +4,76 @@ Example of a RESTful API built with Node.js, Express.js, Mongoose and MongoDB.
 
 ## RESTful API endpoints
 
-### GET `/api/items`
+### GET `/api/bookCards`
 
-Get all items.
+Get all Bookcards.
 
 + Method: `GET`
-+ URL: `/api/items`
++ URL: `/api/bookCards`
 
-### POST `/api/items`
+### POST `/api/bookCards`
 
-Create a new item.
+Create a new bookCard.
 
 + Method: `POST`
-+ URL: `/api/items`
++ URL: `/api/bookCards`
 + Body:
 
 ```js
 {
-  "id": "1",
-  "name": "React.js Essentials",
-  "description": "A fast-paced guide to designing and building scalable and maintainable web apps with React.js.",
-  "quantity": "10"
+  "id": 1000,
+  "title": "React.js Essentials",
+  "author": "React Author",
+  "link": "react@react.com",
+  "cover": "React"
 }
 ```
 
-### GET `/api/items/:itemId`
+### GET `/api/bookCards/:bookCardId`
 
-Get item with specific id.
+Get bookCard with specific id.
 
 + Method: `GET`
-+ URL: `/api/items/1`
++ URL: `/api/bookCards/1000`
 
-### PUT `/api/items/:itemId`
+### PUT `/api/bookCards/:bookCardId`
 
-Update entire item with specific id.
+Update entire bookCard with specific id.
 
 + Method: `PUT`
-+ URL: `/api/items/1`
++ URL: `/api/bookCards/1000`
 + Body:
 
 ```js
 {
   "id": "1",
-  "name": "React.js Essentials",
-  "description": "A fast-paced guide to designing and building scalable and maintainable web apps with React.js.",
-  "quantity": "20"
+  "title": "React.js Essentials",
+  "author": "React Author",
+  "link": "react@react.com",
+  "cover": "React"
 }
 ```
 
-### PATCH `/api/items/:itemId`
+### PATCH `/api/bookCards/:bookCardsId`
 
-Update part of the item with specific id.
+Update part of the bookCard with specific id.
 
 + Method: `PATCH`
-+ URL: `/api/items/1`
++ URL: `/api/bookCards/1000`
 + Body:
 
 ```js
 {
-  "quantity": "30"
+  "cover": "React"
 }
 ```
 
-### DELETE `/api/items/:itemId`
+### DELETE `/api/bookCards/:1000`
 
-Delete item with specific id.
+Delete bookCard with specific id.
 
 + Method: `DELETE`
-+ URL: `/api/items/1`
++ URL: `/api/bookCards/1000`
 
 ## Install
 
