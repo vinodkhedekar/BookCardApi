@@ -64,7 +64,7 @@ Update part of the bookCard with specific id.
 
 ```js
 {
-  "cover": "React"
+  "cover" : "React"
 }
 ```
 
